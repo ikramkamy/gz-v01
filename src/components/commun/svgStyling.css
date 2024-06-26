@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'neuropol';
+  src: url('../../font/neuropol x rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.fontNeuropol{
+font-family:""
+}
+@keyframes changeColor {
+    0% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: 100%;
+    }
+  }
+  @keyframes changeBorder {
+    0% {
+        border-bottom:"#D6D6D6";
+      
+    }
+    100% {
+        border-bottom: #CA2026 ;
+    }
+  }
+
+  .css-188mx6n-MuiSlider-root{
+    color: #CA2026;
+  }
+#svgbtnlogin{
+  height: 20px;
+  background-color: aqua;
+}
+#svgbtnlogin1{
+  height: 100%;
+}
+#Trace_863  {
+    fill: #222;
+   
+    stroke: #CA2026;
+    stroke-width: 2px;
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 100%;
+    animation: changeColor 500ms linear 1;
+    cursor:pointer;
+}
+#Trace_37:hover{
+  fill: #222;
+  stroke: #CA2026;
+  stroke-width: 2px;
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 100%;
+  animation: changeColor 500ms linear infinite;
+  cursor:pointer;
+}
+#btnpcbuilder2:hover #Tracé_262-2{
+  fill: #0000;
+  stroke: #05C7FD;
+  stroke-width: 2px;
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 100%;
+  animation: changeColor 500ms linear infinite;
+  cursor:pointer;
+}
+#btnpcbuilder1:hover #Tracé_262-2{
+  fill: #0000;
+  stroke: #ca2026;
+  stroke-width: 2px;
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 100%;
+  animation: changeColor 500ms linear infinite;
+  cursor:pointer;
+}
+.dynamicredText{
+  color:#CA2026;
+
+}
+.dynamicblueText{
+  color: #05C7FD;
+
+}
