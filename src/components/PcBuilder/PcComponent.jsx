@@ -4,14 +4,17 @@ import FilterObject from "./FilterObject";
 const PcComponent=({name,filter, price , urlImage, textcolor})=>{
   const [btnFill, setBtnFill]=useState('none')
   const [dynamicColor, setDynamicColor]=useState('')
+  const [dynamicBorder, setDynamisBorder]=useState('')
   useEffect(()=>{
     if(textcolor === "hover:text-redPrimary"){
       setBtnFill('#CA2026')
-      //dynamic class with tailwind doesn't work correctly
+      //dynamic class with tailwind doesn't work correctly 
       setDynamicColor('dynamicredText')
+      setDynamisBorder('dynamicredborder')
     }else{
       setBtnFill('#05C7FD')
       setDynamicColor('dynamicblueText')
+      setDynamisBorder('dynamicblueborder')
     }
   },[textcolor])
   console.log(`filter`, filter)
@@ -19,7 +22,7 @@ const PcComponent=({name,filter, price , urlImage, textcolor})=>{
     return(
   <div className={`relative w-full  
    h-fit  flex  items-center justify-end
-     hover:border-2 border-[${btnFill}] bg-gradient-to-r from-greyPrimary`}>
+     hover:border-2 border-[${btnFill}] bg-gradient-to-r from-greyPrimary ${dynamicBorder}`}>
     <svg xmlns="http://www.w3.org/2000/svg" className="absolute hidden top-0" 
     xlink="http://www.w3.org/1999/xlink" width="675" height="134.1" viewBox="-60.363 0 675 134.1">
   <defs>

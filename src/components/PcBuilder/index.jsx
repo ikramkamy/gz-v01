@@ -65,7 +65,9 @@ setSelectedCategory(e)
      
 <div className=" w-full  flex justify-between items-cenetr   h-[60vh]">
      <div className="h-full w-[15%] flex flex-col ">
-     <div className="pb-4  h-full w-full flex flex-col justify-between items-center   max-sm:translate-x-[-90%] hover:max-sm:translate-x-[0%]">
+     <div className="pb-4  h-full w-full flex flex-col
+      justify-between items-center   
+      max-sm:translate-x-[-90%] hover:max-sm:translate-x-[0%]">
      {technicalSpecification.map((e)=>
      <SideBarItem textcolor={textcolor} icon={e.urlImage} name={e.name} specifcation={e.specifcation}
      btnFill={textcolor}
@@ -92,7 +94,7 @@ urlImage={e.urlImage} textcolor={textcolor} />
 
 <LowerBar textcolor={textcolor} />
 </div>
-<div className="w-full flex justify-center items-center overflow-y-auto ">
+<div className="w-full flex justify-center items-center  ">
 <NouveatePcBuilder />
 </div>
 <Footer/>

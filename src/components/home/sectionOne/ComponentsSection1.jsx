@@ -8,9 +8,9 @@ const [fillColor , setFillColor]=useState('none')
     cursor-pointer relative  p-10 max-sm:p-2 h-[40.961px]  max-sm:w-full" 
     onMouseEnter={()=>setFillColor("#ca2026")} onMouseLeave={()=>setFillColor("none")} >
 
-  <div className="uppercase text-[24px] max-xl:text-[18px] bg-transparent cursor-pointer z-20 
-  flex justify-center items-center max-sm:text-[14px]">
-   <Link to={props.linkbtn}>{props.btnName}</Link> 
+  <div className="uppercase text-[14px] max-xl:text-[18px] bg-transparent cursor-pointer z-20 
+  flex justify-center items-center max-sm:text-[10px]">
+   <Link to={props.linkbtn}>{props.btnName} </Link> 
     
     </div>
     <svg 

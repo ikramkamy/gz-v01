@@ -9,7 +9,7 @@ import { useFiltersStor } from "../../components/stores/filertsStore";
 import { useEffect, useState , useCallback} from "react";
 import FiltersProducts from "../commun/FiltersProducts";
 import ResponsiveDialog from "../commun/ResponsiveDialog";
-
+import ProductCategoiesCarousel from "./CategoryCarousel";
 const Products=()=>{
  const {AllProducts, FiltersofEachCategory, setFiltersofEachCategory,AutoCompletSearchValue, Priceforfiltering}=UseProductsStore((state)=>state) ;
  const {cathegories,Filters}=useFiltersStor((state)=>state);
@@ -303,9 +303,10 @@ console.log("filterd by search input", array)
             
         
         </div>
+        <ProductCategoiesCarousel/>
 
         {/****Products and filters*****/}
-        <div className="flex w-full justify-center mt-20 p-20 max-sm:p-2 items-start relative">
+        <div className="flex w-full justify-center  p-20 max-sm:p-2 items-start relative">
                  {/****Series*****/}
                 <button className="hover:bg-redPrimary " onClick={()=>setShow(!show)}></button>
                  <div className="flex cursor-pointer flex-col w-2/12 max-sm:w-full max-sm:translate-x-[-90%] hover:max-sm:translate-x-[0%]  max-sm:pl-10 max-sm:bg-[#CA2026] max-sm:absolute max-sm:z-20 transition ease-in-out delay-150 ">
@@ -362,7 +363,8 @@ console.log("filterd by search input", array)
                  
                {show &&  <div className="flex w-full  flex-wrap justify-center mt-20 mb-20">
                  
-                   {productsFilteredByDetailedFilter.map((e)=><ProductItem
+                   {productsFilteredByDetailedFilter.map((e)=>
+                   <ProductItem
                    product={e}
                    urlImage={e.urlImage} 
                    id={e.id}
@@ -381,7 +383,8 @@ console.log("filterd by search input", array)
                        <ResponsiveDialog/>
                     }
                
-                   {productsFiltedbySpecificFilters.map((e)=><ProductItem
+                   {productsFiltedbySpecificFilters.map((e)=>
+                   <ProductItem
                    
                     product={e}
                    urlImage={e.urlImage} 
@@ -456,7 +459,8 @@ console.log("filterd by search input", array)
                      max-sm:pl-20 max-sm:bg-[#CA2026] max-sm:absolute max-sm:z-20 transition ease-in-out delay-150">
                        <h1 className="uppercase text-[18px] mb-4">category</h1>
 
-                       {copyCathegories.map((e)=> <div className="flex  w-full">
+                       {copyCathegories.map((e)=> 
+                       <div className="flex  w-full">
                                              <input type="checkbox" className="mr-4"  checked={e.FilterIsActive} onChange={()=>handelActiveFilters(e)}/>
                                              <label className="text-[14px]">{e.category}</label>
                                              </div>)}

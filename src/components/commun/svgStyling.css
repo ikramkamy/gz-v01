@@ -5,11 +5,13 @@
   font-style: normal;
 }
 .fontNeuropol{
-font-family:""
+font-family: neuropol;
+
 }
 @keyframes changeColor {
     0% {
       stroke-dashoffset: 0;
+
     }
     100% {
       stroke-dashoffset: 100%;
@@ -76,7 +78,13 @@ font-family:""
   color:#CA2026;
 
 }
+.dynamicredborder:hover{
+  border: 2px solid #ca2026;
+}
 .dynamicblueText{
   color: #05C7FD;
 
+}
+.dynamicblueborder:hover{
+  border: 2px solid #05C7FD;
 }

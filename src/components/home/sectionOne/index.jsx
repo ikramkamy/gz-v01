@@ -112,26 +112,36 @@ setElem(CarouselElements.length - 1)
      }
   }
     return(
-  <div className="flex"> 
+  <div className="flex fontNeuropol"> 
  
 <div className="w-full   flex flex-col items-center mt-2">
 
-<div className="flex justify-center items-center w-full h-full p-20 max-md:p-2 bg-sectionOnebg bg-cover bg-no-repeat bg-center max-sm:p-0">
-<img src={prev} alt="gaming divatch pc " className="cursor-pointer" onClick={()=>handelNext()}/> 
+<div className="flex justify-center 
+items-center w-full h-full p-20 
+max-md:p-2 bg-sectionOnebg bg-cover
+ bg-no-repeat bg-center max-sm:p-0">
+<img src={prev} alt="gaming divatch pc "
+ className="cursor-pointer" onClick={()=>handelNext()}/> 
 
 <Link to="/" className="w-full flex justify-center items-center max-md:mt-20"> 
-<div className="w-10/12  max-xl:w-full  max-sm:w-full  max-sm:h-auto max-sm:pb-[10%]  flex  justify-between items-center max-sm:flex-col-reverse ">
-            <div className="group flex  flex-col  w-1/3 items-start justify-between   h-full
+<div className="w-10/12 
+ max-xl:w-full  max-sm:w-full  max-sm:h-auto max-sm:pb-[10%] 
+  flex  justify-between items-center max-sm:flex-col-reverse ">
+            <div className="group flex  flex-col
+              w-1/3 items-start justify-between   h-full
               max-sm:w-full max-sm:items-center max-sm:mt-2">
                 {/**titeles */}
-              <div className="h-1/2 flex flex-col justify-center items-start max-sm:mt-10">
+              <div className="h-1/2 flex flex-col
+               justify-center items-start max-sm:mt-10">
               <div id="#subtitleOne" className="flex justify-center items-center">
-                <div id="#stylingVerticalSlach" className="w-1 h-4 bg-btnCarouselHover mr-2"></div>
-                <h1 className="text-[21px] uppercase max-md:text-[14px] ">{CarouselElements[elem].subtitle}</h1>
+                <div id="#stylingVerticalSlach" className="w-1 h-4 
+                bg-btnCarouselHover mr-2"></div>
+                <h1 className="text-[18px]  uppercase max-md:text-[14px] 
+                ">{CarouselElements[elem].subtitle}</h1>
                 
                 </div>
-              <h1 className="text-[69px]  max-2xl:text-[38px] max-xl:text-[38px]  uppercase text-left max-sm:text-center text-wrap max-sm:text-[43px] group-hover:animate-fade"> {`${CarouselElements[elem].title.split(' ')[0]} ${CarouselElements[elem].title.split(' ')[1]}`}</h1>
-              <h2 className="text-[79px]  max-2xl:text-[38px] max-xl:text-[38px]   uppercase text-left max-sm:flex max-sm:justify-center max-sm:w-full  font-light max-sm:text-[43px] group-hover:animate-fade2 delay-700">{CarouselElements[elem].title.split(' ')[2]}</h2> 
+              <h1 className="text-[39px]  max-2xl:text-[38px] max-xl:text-[38px]  uppercase text-left max-sm:text-center text-wrap max-sm:text-[43px] group-hover:animate-fade"> {`${CarouselElements[elem].title.split(' ')[0]} ${CarouselElements[elem].title.split(' ')[1]}`}</h1>
+              <h2 className="text-[49px]  max-2xl:text-[38px] max-xl:text-[38px]   uppercase text-left max-sm:flex max-sm:justify-center max-sm:w-full  font-light max-sm:text-[43px] group-hover:animate-fade2 delay-700">{CarouselElements[elem].title.split(' ')[2]}</h2> 
               {/**buttons Products & trending */}
               <div className="flex justify-between items-center  max-sm:w-full ">
                <ButtonHomeSection btnName="products" linkbtn="/products" />

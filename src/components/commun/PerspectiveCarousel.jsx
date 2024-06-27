@@ -1,13 +1,9 @@
 
 import Flicking from "@egjs/react-flicking";
-import { Perspective } from "@egjs/flicking-plugins";
+import { Perspective,  AutoPlay } from "@egjs/flicking-plugins";
 import img from '../../assets/home/section1/nouveaute/marm2-color-1_480x600_edited.png';
 import CarouselItem from "../../components/home/NouveauteSection/CarouselItem";
 import { UseProductsStore } from "../../components/stores/ProductsStore";
-import newProdimg1 from '../../assets/home/section1/nouveaute/mhw100_960x960.png'
-import newProdimg2 from '../../assets/home/section1/nouveaute/mh222_960x960.png'
-import newProdimg3 from '../../assets/home/section1/nouveaute/mcneo_960x960.png'
-import newProdimg4 from '../../assets/home/section1/nouveaute/mcex_640x640.png'
 import newProdimg5 from '../../assets/home/section1/nouveaute/mc777_640x640.png'
 import newProdimg6 from '../../assets/home/section1/nouveaute/marm2-color-1_480x600_edited.png'
 import ram from '../../assets/products/ram.png';
@@ -16,9 +12,12 @@ import { Link } from "react-router-dom";
  const CarouselPerspective =()=> {
     const {NewProducts}=UseProductsStore((state)=>state)
   const plugins = [new Perspective({ rotate: -1, scale: 2, perspective: 2600 })];
+  const plugins1 = [new AutoPlay({ duration: 1000, direction: "NEXT", stopOnHover: false })];
 
-
-    return (<Flicking  circular={true} plugins={plugins} className="flex justify-center items-center  pt-2">
+    return (<Flicking 
+     circular={true} plugins={plugins1}
+     
+     className="flex justify-center items-center  pt-2">
       <div className="card-panel " > 
      
       {/*NewProducts.map((e)=><CarouselItem 

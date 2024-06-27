@@ -10,6 +10,7 @@ import './nav.css';
 import ContextMenu from "../commun/Menue2"
 import CustomizedBadges from '../../components/commun/ShopingCartIcon'
 import game from '../../assets/home/game.png';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 const Navbar=()=>{
  const [fade, setFade]=useState(false) ;
  const [showMenue, setShowMenue]  =useState();
@@ -233,10 +234,12 @@ xmlns="http://www.w3.org/2000/svg" width="113.225" height="57.357" viewBox="0 0 
 </div>
 <div className="flex justify-end items-center   w-4/12">
         <div className="flex justify-between items-center">
-        <img src={game} alt='tournements'/>
+      
+       
         <Link to="/tournement">
         
-       
+        <SportsEsportsIcon  
+        className="text-redPrimary opacity-70 hover:opacity-100 cursor-pointer"/>
         
         
         </Link>

@@ -19,7 +19,7 @@ export default function CustomizedBadges() {
   return (
     <IconButton aria-label="cart">
       <StyledBadge badgeContent={productsList.length} color="primary">
-        <ShoppingCartIcon color='warning'/>
+        <ShoppingCartIcon  className="text-redPrimary opacity-70 hover:opacity-100 cursor-pointer" />
       </StyledBadge>
     </IconButton>
   );

@@ -1,5 +1,6 @@
 import {create} from 'zustand'
 import axios from 'axios'
+import processor from "../../assets/category/processor.png";
 
 export const useFiltersStor=create((set,get)=>({
 cathegories: [
